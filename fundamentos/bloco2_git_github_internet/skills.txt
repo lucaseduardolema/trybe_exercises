@@ -1,6 +1,5 @@
 Unix
 Bash
 Git
-HTML
-CSS
-JavaScript
+Phyton
+NodeJs
