@@ -14,12 +14,12 @@
 <ul>
   <li>2-1: Git & GitHub - O que é e para que serve ✔️</li>
   <li>2-2: Git & GitHub - Entendendo os comando ✔️</li>
-  <li>2-3: Internet - Entendendo como ela funciona</li>
+  <li>2-3: Internet - Entendendo como ela funciona ✔️</li>
 </ul>
 <h3>Bloco 3: Introdução à HTML e CSS</h3>
 <ul>
-  <li>3-1: Introdução - HTML & CSS</li>
-  <li>3-1: HTML & CSS - Estruturas de página</li>
+  <li>3-1: Introdução - HTML & CSS ✔️</li>
+  <li>3-1: HTML & CSS - Estruturas de página ✔️</li>
   <li>3-2: HTML & CSS - Primeiros passos em CSS</li>
   <li>3-3: HTML & CSS - Seletores e posicionamento</li>
   <li>3-4: HTML Semântico</li>
