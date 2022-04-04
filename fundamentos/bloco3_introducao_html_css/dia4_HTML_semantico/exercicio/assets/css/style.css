@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 18px;
@@ -7,14 +13,21 @@ body {
   background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
-header {
+#header {
+  text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+} 
+
+#nav-bar nav ul, li, a{
+  display: inline-block;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+section.nav-bar {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  background-color: black;
+  min-height: 3.5rem;
 }
 
 header a {
@@ -23,17 +36,23 @@ header a {
   background-color: chartreuse;
 }
 
-header div, h1, nav, ul {
-  display: inline-block;
-}
-
 #header li {
   list-style: none;
   display: inline-block;
 }
 
-h1 {
-  font-size: 1.7rem;
+article * {
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 
 .tabela {
@@ -42,10 +61,10 @@ h1 {
   max-width: 40rem;
 }
 
-section {
+/* section {
   padding-bottom: 3rem;
   min-height: 20rem;
-}
+} */
 
 #description div {
   display: inline-block;
@@ -58,11 +77,21 @@ section {
   padding-right: 10%;
 }
 
+#vision div {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
 #vision img {
   float: left;
   padding-right: 2rem;
 }
 
+#boxing div {
+  display: inline-block;
+  height: 100%;
+  min-height: 700vh;
+}
 #boxing img {
   float: right;
   padding-left: 2rem;
@@ -70,4 +99,11 @@ section {
 
 footer {
   text-align: center;
+  background-color: black;
+  color: white;
+  min-height: 4rem;
+}
+
+footer p {
+  padding-top: 20px;
 }

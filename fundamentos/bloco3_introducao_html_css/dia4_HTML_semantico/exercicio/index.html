@@ -28,19 +28,20 @@
   6 - Adicione um rodapé na página, mostrando algo do gênero: "Conteúdo compilado por <insere seu nome>, <ano atual>".
   Obs: para esse exercício, é obrigatório fazer uso de, no mínimo , 6 elementos com as seguintes tags: header , nav , article , section , h1 , h2 , h3, aside , footer , table e img .
   -->
-  <header id="header">
-    <section>
-      <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
-    </section>
-
-    <section>
-      <nav class="nav-bar">
+  <header>
+    <section class="nav-bar">
+      <nav>
         <ul>
           <li><a href="#description">Página Inicial</a></li>
           <li><a href="#vision">Sobre</a></li>
           <li><a href="#boxing">Contato</a></li>
         </ul>
       </nav>
+    </section>
+    
+    <section id="header">
+      <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iure!</p>
     </section>
   </header>
 
@@ -49,45 +50,47 @@
       <article>
         <h2>Fatos sobre o Stomatopoda</h2>
 
-        <div id="description">
-          <h3>Descrição</h3>
-          <p>Stomatopoda (ou estomatópode), chamados popularmente de tamarutacas ou de lacraias-do-mar no Brasil, é uma ordem de crustáceos marinhos da subclasse Hoplocarida, que agrupa cerca de 400 espécies, caracterizadas principalmente pela morfologia da segunda pata torácica, que é modificada em apêndice subquelado, lembrando uma pata de louva-a-deus.</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque error quaerat, asperiores molestias quasi, incidunt aspernatur alias provident placeat accusamus saepe ratione facere? Voluptas perspiciatis dolores ipsam doloribus cupiditate obcaecati.</p>
-        </div>
-  
         <div>
-          <table class="tabela">
-            <caption><i>Odontodactylus scyllarus</i></caption>
-            <tbody>
-              <tr>
-                <th>Reino</th>
-                <td>Animalia</td>
-              </tr>
-              <tr>
-                <th>Filo</th>
-                <td>Arthropoda</td>
-              </tr>
-              <tr>
-                <th>Subfilo</th>
-                <td>Crustacea</td>
-              </tr>
-              <tr>
-                <th>Classe</th>
-                <td>Malacostraca</td>
-              </tr>
-              <tr>
-                <th>Subclasse</th>
-                <td>Hoplocarida</td>
-              </tr>
-              <tr>
-                <th>Ordem</th>
-                <td>Stomatopoda
-                  Latreille, 1817</td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <img src="http://1.bp.blogspot.com/-9nUUfWBZg8w/T7uLMMiurGI/AAAAAAAAFrs/cjHB7NDNCJg/s400/Mantis-shrimp.jpg" alt="Stomatopoda">
+          <div id="description">
+            <h3>Descrição</h3>
+            <p>Stomatopoda (ou estomatópode), chamados popularmente de tamarutacas ou de lacraias-do-mar no Brasil, é uma ordem de crustáceos marinhos da subclasse Hoplocarida, que agrupa cerca de 400 espécies, caracterizadas principalmente pela morfologia da segunda pata torácica, que é modificada em apêndice subquelado, lembrando uma pata de louva-a-deus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque error quaerat, asperiores molestias quasi, incidunt aspernatur alias provident placeat accusamus saepe ratione facere? Voluptas perspiciatis dolores ipsam doloribus cupiditate obcaecati.</p>
+          </div>
+    
+          <div>
+            <table class="tabela">
+              <caption><i>Odontodactylus scyllarus</i></caption>
+              <tbody>
+                <tr>
+                  <th>Reino</th>
+                  <td>Animalia</td>
+                </tr>
+                <tr>
+                  <th>Filo</th>
+                  <td>Arthropoda</td>
+                </tr>
+                <tr>
+                  <th>Subfilo</th>
+                  <td>Crustacea</td>
+                </tr>
+                <tr>
+                  <th>Classe</th>
+                  <td>Malacostraca</td>
+                </tr>
+                <tr>
+                  <th>Subclasse</th>
+                  <td>Hoplocarida</td>
+                </tr>
+                <tr>
+                  <th>Ordem</th>
+                  <td>Stomatopoda
+                    Latreille, 1817</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <img src="http://1.bp.blogspot.com/-9nUUfWBZg8w/T7uLMMiurGI/AAAAAAAAFrs/cjHB7NDNCJg/s400/Mantis-shrimp.jpg" alt="Stomatopoda">
+          </div>
         </div>
     
         <div id="vision">
@@ -102,6 +105,7 @@
           <h3>O soco</h3>
           <img src="http://4.bp.blogspot.com/-s6Bal4LOpy0/T7uMGU-gj_I/AAAAAAAAFr8/OdHsxHMpfr0/s400/mantis-shrimp-n.jpg" alt="Stomatopoda">
           <p>As maiores esmagadoras, tais como exemplares de Odontodactylus scyllarus, são capazes de desferir um dos mais rápidos e violentos golpes do reino animal, um soco que pode apresentar a velocidade de um tiro calibre .22 (equivalente a 720 km/h) e uma pressão de impacto de 600 N/cm².[3] Essa força esmagadora é a responsável pelo seu título de "lagosta-boxeadora" e é capaz de facilmente quebrar a carapaça de um caranguejo, as conchas duras e calcificadas de gastrópodes ou até mesmo quebrar o vidro reforçado de um aquário.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iste debitis laborum eaque deserunt voluptatem natus, ea optio eos earum nulla inventore nostrum similique, doloremque harum! Quidem deleniti repellat dolorem enim repudiandae voluptate eum eos explicabo facilis ratione architecto earum est possimus cupiditate, omnis, rem minus hic illo consequuntur totam aut, incidunt distinctio error. Culpa deleniti accusamus rem vero, illum minus, commodi, perferendis quibusdam quod vitae fugiat labore dolorem modi? Dignissimos minus consequatur facere, quia dicta velit voluptatibus ex adipisci iusto at nulla vel explicabo architecto aperiam temporibus ipsa vero laboriosam deleniti nostrum autem commodi. Ab, a sit quam obcaecati labore repellat nobis consectetur, provident est voluptas esse soluta suscipit nulla atque itaque ullam, voluptatem doloremque debitis cumque minima! Itaque in dolores aperiam vitae eum est deserunt unde? Sed, earum repellat. Laborum praesentium, exercitationem optio inventore, illo enim ipsam repellat dolorem tenetur fugiat quibusdam dolorum, voluptatibus eligendi quisquam iusto obcaecati!</p>
         </div>
 
         <div>
@@ -121,16 +125,16 @@
       </article>
     </section>
 
-    <section>
+    <!-- <section>
       <aside>
-        <h1>Topico</h1>
+        <h1>Topicos</h1>
         <ul>
           <li></li>
           <li></li>
           <li></li>
         </ul>
       </aside>
-    </section>
+    </section> -->
   </main>
 
   <footer>
