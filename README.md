@@ -20,10 +20,10 @@
 <ul>
   <li>3-1: Introdução - HTML & CSS ✔️</li>
   <li>3-1: HTML & CSS - Estruturas de página ✔️</li>
-  <li>3-2: HTML & CSS - Primeiros passos em CSS</li>
-  <li>3-3: HTML & CSS - Seletores e posicionamento</li>
-  <li>3-4: HTML Semântico</li>
-  <li>3-5: Projeto - Lessons Learned</li>
+  <li>3-2: HTML & CSS - Primeiros passos em CSS ✔️</li>
+  <li>3-3: HTML & CSS - Seletores e posicionamento ✔️</li>
+  <li>3-4: HTML Semântico ✔️</li>
+  <li>3-5: Projeto - Lessons Learned ✔️</li>
 </ul>
 <h3>Bloco 4: Introdução à JavaScript e Lógica de Programação</h3>
 <ul>
