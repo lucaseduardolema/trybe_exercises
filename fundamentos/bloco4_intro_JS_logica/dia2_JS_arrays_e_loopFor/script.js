@@ -93,19 +93,14 @@ console.log(`\nExistem ${impar.length} números impares no array`)
 
 // Utilizando for , descubra qual o menor valor contido no array e imprima-o
 
-// let menor = undefined;
+let menor = numbers[0];
 
-// for (let menor of numbers) {
-//   if (menor )
-// }
-
-// for (let i = 0; i < numbers.length; i += 1) {
-//   menor = numbers[i]
-//   if (numbers[i] < menor) {
-//     menor = numbers[i];
-//   }
-// }
-// console.log(`\nEsse é o menor numero: ${menor}`)
+for (let i = 0; i < numbers.length; i += 1) {
+  if (numbers[i] < menor) {
+    menor = numbers[i];
+  }
+}
+console.log(`\nEsse é o menor numero: ${menor}`)
 
 // Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado
 
