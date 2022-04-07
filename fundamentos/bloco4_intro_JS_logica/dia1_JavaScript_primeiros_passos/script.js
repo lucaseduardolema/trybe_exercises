@@ -203,12 +203,16 @@ if (ladoA < 0 || ladoB < 0 || ladoC < 0) {
 // Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 // Exemplo: bishop (bispo) -> diagonals (diagonais)
 
-// let chessPiece = "BISHOP";
-// let result = chessPiece.toLowerCase();
+let chessPiece = "BISHOP";
+let result = chessPiece.toLowerCase();
 
-// if (result != typeof String) {
-//   console.log('erro')
-// } 
+switch (result) {
+  case "bishop":
+    console.log("diagonals");
+    break;
+  default:
+    console.log("erro")
+}
 
 
 // Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras
@@ -270,3 +274,68 @@ if (num10 % 2 == 1 || num11 % 2 == 1 || num12 % 2 == 1) {
 // O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.
 // valorCustoTotal = valorCusto + impostoSobreOCusto
 // lucro = valorVenda - valorCustoTotal (lucro de um produto)
+
+const custoProduto = 70;
+const valorVenda = 150;
+
+let custoFinal = custoProduto + (custoProduto * 0.2);
+
+let lucro = undefined
+
+if (custoProduto < 0 || valorVenda < 0) {
+  console.log('erro')
+} else {
+  lucro = ((valorVenda - custoFinal) * 1000);
+  console.log(lucro);
+}
+
+// Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+// A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
+// INSS (Instituto Nacional do Seguro Social)
+// Salário bruto até R$ 1.556,94: alíquota de 8%
+// Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9%
+// Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11%
+// Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88
+// IR (Imposto de Renda)
+// Até R$ 1.903,98: isento de imposto de renda
+// De R$ 1.903,99 a 2.826,65: alíquota de 7,5% e parcela de R$ 142,80 a deduzir do imposto
+// De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir do imposto
+// De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
+// Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
+
+const inssAliquota1 = 0.08;
+const inssAliquota2 = 0.09;
+const inssAliquota3 = 0.11;
+const inssAliquota4 = 570.88;
+
+const ir1 = 0.075;
+const ir2 = 0.15;
+const ir3 = 0.225;
+const ir4 = 0.275;
+
+const salary = 9000;
+let baseSalary = undefined;
+let finalSalary = undefined;
+
+if (salary <= 1556.94) {
+  baseSalary = (salary - (salary * inssAliquota1));
+} else if (salary >= 1556.95 && salary <= 2594.92) {
+  baseSalary = (salary - (salary * inssAliquota2));
+} else if (salary >= 2594.93 && salary <= 5189.82) {
+  baseSalary = (salary - (salary * inssAliquota3));
+} else if (salary > 5189.82) {
+  baseSalary = (salary - inssAliquota4)
+}
+
+if (baseSalary <= 1903.98) {
+  finalSalary = baseSalary;
+} else if (baseSalary >= 1903.99 && baseSalary <= 2826.65) {
+  finalSalary = (baseSalary - (baseSalary * ir1 - 142.8));
+} else if (baseSalary >= 2826.66 && baseSalary <= 3751.05) {
+  finalSalary = (baseSalary - (baseSalary * ir2 - 354.8));
+} else if (baseSalary >= 3751.06 && baseSalary <= 4664.68) {
+  finalSalary = (baseSalary - (baseSalary * ir3 - 636.13));
+} else if (baseSalary > 4664.68) {
+  finalSalary = (baseSalary - (baseSalary * ir4 - 869.36));
+}
+console.log(finalSalary)
