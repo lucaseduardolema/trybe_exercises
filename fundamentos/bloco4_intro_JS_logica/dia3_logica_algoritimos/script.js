@@ -45,3 +45,24 @@ for (let i = 0; i < array.length; i += 1) {
 console.log(`\nEssa é a menor palavra do array: ${menorPalavra}`)
 
 // 4- Um número primo é aquele divisível apenas por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50.
+
+// em tentativa
+let numerosPrimos = [];
+let maiorPrimoAte50;
+let contador
+
+for (let index = 1; index <= 50; index += 1) {
+  for (let index2 = 2; index2 <= 50; index2 += 1) {
+    if (Number.isInteger(index / index2)) {
+      numerosPrimos.push(index)
+    } for (let index3 = 0; index3 < numerosPrimos.length; index3 += 1) {
+      
+    }
+  }
+}
+console.log(numerosPrimos)
+
+let x = 4
+let y = 1
+
+console.log(Number.isInteger(4/1))
