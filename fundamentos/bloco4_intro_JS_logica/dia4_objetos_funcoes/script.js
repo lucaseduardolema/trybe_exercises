@@ -229,3 +229,6 @@ console.log(`\nPalavra que contém maior número de caracteres: ${maioQuantidade
 
 let arrayTeste4 = [2, 3, 2, 5, 8, 2, 3];
 
+function maisRepete(arr) {
+  for (let i in arr) {}
+}
