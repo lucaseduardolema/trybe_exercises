@@ -211,11 +211,11 @@ let arrayTeste3 = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 let quantidadeCaracter = arrayTeste3[0]
 
 function maioQuantidadeCaracter(arr) {
-  for (let i in arr) {
+  for (let i of arr) {
     // console.log(i)
     // console.log(arr[i])
-    if (arr[i].length > quantidadeCaracter.length) {
-      quantidadeCaracter = arr[i]
+    if (i.length > quantidadeCaracter.length) {
+      quantidadeCaracter = i
       // console.log(quantidadeCaracter)
     }
   }
@@ -229,6 +229,51 @@ console.log(`\nPalavra que contém maior número de caracteres: ${maioQuantidade
 
 let arrayTeste4 = [2, 3, 2, 5, 8, 2, 3];
 
-function maisRepete(arr) {
-  for (let i in arr) {}
+// function maisRepete(arr) {
+//   let contador = 0
+//   for (let i of arr) {
+//     for (let i2 of arr) {
+//       if (i == i2) {
+//         contador = i
+//       }
+//     }
+//     // console.log(i)
+//   }
+//   return contador
+// }
+// console.log(`\nInteiro que mais repete ${maisRepete(arrayTeste4)}`)
+
+// 6 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+// Valor de teste: N = 5 .
+// Valor esperado no retorno da função: 1+2+3+4+5 = 15
+
+function soma(N) {
+  let calc = 0;
+  for (let i = N; i >= 0; i -= 1) {
+    calc = calc + i;
+  }
+  return calc
 }
+console.log(`\nEssa é a soma ${soma(5)}`);
+
+// 7 - Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
+// Valor de teste: 'trybe' e 'be'
+// Valor esperado no retorno da função: true
+// verificaFimPalavra('trybe', 'be') ;
+// Retorno esperado: true
+// verificaFimPalavra('joaofernando', 'fernan') ;
+// Retorno esperado: false
+
+function verificaFimPalavra(word, ending) {
+  let fim = '';
+  for (let i = word.length; i >= (word.length - ending.length); i -= 1){
+    fim = word.charAt(i) + fim;
+    // console.log(fim)
+  }
+  if (fim == ending) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(`\nO final de da 1ª palavra é igual a 2º: ${verificaFimPalavra('trybe', 'be')}`);
