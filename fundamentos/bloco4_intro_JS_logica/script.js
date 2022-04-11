@@ -61,6 +61,8 @@ for (let i in car) {
 }
 
 // Exercicios
+// Parte I - Objetos e For/In
+
 // Usando o objeto abaixo, faça os exercícios a seguir:
 
 let info = {
@@ -140,3 +142,90 @@ leitor.livrosFavoritos[1] = {
 // 8 - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: "Julia tem 2 livros favoritos".
 
 console.log(`\n${leitor.nome} tem ${leitor.livrosFavoritos.length} livros favoritos`)
+
+// Exercicios
+// Parte II - Funções
+
+// 1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
+// Exemplo de palíndromo: arara .
+// verificaPalindrome('arara') ;
+// Retorno esperado: true
+// verificaPalindrome('desenvolvimento') ;
+// Retorno esperado: false
+
+function verificaPalindrome(palavra) {
+  let palavraInvertida = [];
+  for (let i = 0; i < palavra.length; i += 1) {
+    palavraInvertida.unshift(palavra[i])
+  }
+  //console.log('\n'+palavraInvertida);
+  palavraInvertida = palavraInvertida.join('');
+  // console.log(palavraInvertida);
+  if (palavra == palavraInvertida) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log('\n'+ verificaPalindrome("arara"));
+
+// 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+// Array de teste: [2, 3, 6, 7, 10, 1]; .
+// Valor esperado no retorno da função: 4 .
+
+let arrayTeste = [2, 3, 6, 7, 10, 1];
+
+function indiceMaiorValor(arr) {
+  for (let i in arr) {
+    // console.log(i)
+    if (arr[i] > arr[0]) {
+      var indiceMaior = i
+      // console.log(`Maior indice ${indiceMaior}`)
+    }
+  }
+  return indiceMaior
+}
+console.log(`\nPosição do maior número: ${indiceMaiorValor(arrayTeste)}`);
+
+// 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+// Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
+// Valor esperado no retorno da função: 6 .
+
+let arrayTeste2 = [2, 4, 6, 7, 10, 0, -3];
+
+function indiceMenorValor (arr) {
+  for (let i in arr) {
+    if (arr[i] < arr[0]) {
+      var indiceMenor = i
+    }
+  }
+  return indiceMenor
+}
+console.log(`\nPosição do menor número: ${indiceMenorValor(arrayTeste2)}`)
+
+// 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+// Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
+// Valor esperado no retorno da função: Fernanda
+
+let arrayTeste3 = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+let quantidadeCaracter = arrayTeste3[0]
+
+function maioQuantidadeCaracter(arr) {
+  for (let i in arr) {
+    // console.log(i)
+    // console.log(arr[i])
+    if (arr[i].length > quantidadeCaracter.length) {
+      quantidadeCaracter = arr[i]
+      // console.log(quantidadeCaracter)
+    }
+  }
+  return quantidadeCaracter
+}
+console.log(`\nPalavra que contém maior número de caracteres: ${maioQuantidadeCaracter(arrayTeste3)}`);
+
+// 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+// Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
+// Valor esperado no retorno da função: 2
+
+let arrayTeste4 = [2, 3, 2, 5, 8, 2, 3];
+
