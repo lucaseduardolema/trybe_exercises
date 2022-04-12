@@ -230,18 +230,38 @@ console.log(`\nPalavra que contém maior número de caracteres: ${maioQuantidade
 let arrayTeste4 = [2, 3, 2, 5, 8, 2, 3];
 
 // function maisRepete(arr) {
-//   let contador = 0
-//   for (let i of arr) {
-//     for (let i2 of arr) {
-//       if (i == i2) {
-//         contador = i
+//   let emOrdem = arr.sort(function(a, b) {return a - b})
+//   console.log(emOrdem)
+//   let cont1 = 0
+//   let cont2 = 0
+//   for (let i of emOrdem) {
+//     for (let i2 of emOrdem) {
+//       if (i === i2) {
+//         cont1
 //       }
 //     }
-//     // console.log(i)
 //   }
-//   return contador
 // }
-// console.log(`\nInteiro que mais repete ${maisRepete(arrayTeste4)}`)
+function maisRepete(arr) {
+  let contRepetido = 0;
+  let contNumero = 0;
+  let indexNumeroRepetido = 0;
+  for (let index in arr) {
+    let verificaNumero = arr[index];
+    for (let index2 in arr) {
+      if (verificaNumero === arr[index2]) {
+        contNumero += 1;
+      }
+    }
+    if (contNumero > contRepetido) {
+      contRepetido = contNumero;
+      indexNumeroRepetido = index;
+    }
+    contNumero = 0;
+  }
+  return arr[indexNumeroRepetido];
+}
+console.log(`\nInteiro que mais repete: ${maisRepete(arrayTeste4)}`)
 
 // 6 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
 // Valor de teste: N = 5 .
