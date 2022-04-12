@@ -27,11 +27,11 @@
 </ul>
 <h3>Bloco 4: Introdução à JavaScript e Lógica de Programação</h3>
 <ul>
-  <li>4-1: Introdução - JavaScript</li>
-  <li>4-1: JavaScript - Primeiros passos</li>
-  <li>4-2: JavaScript - Array e loop For</li>
-  <li>4-3: JavaScript - Lógica de Programação e Algoritmos</li>
-  <li>4-4: JavaScript - Objeros e funções</li>
+  <li>4-1: Introdução - JavaScript ✔️</li>
+  <li>4-1: JavaScript - Primeiros passos ✔️</li>
+  <li>4-2: JavaScript - Array e loop For ✔️</li>
+  <li>4-3: JavaScript - Lógica de Programação e Algoritmos ✔️</li>
+  <li>4-4: JavaScript - Objeros e funções ✔️</li>
   <li>4-5: Projeto - Playground Functions</li>
 </ul>
 <h3>Bloco 5: JavaScript: DOM, Eventos e Web Storage</h3>
