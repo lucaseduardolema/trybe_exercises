@@ -32,11 +32,11 @@
   <li>4-2: JavaScript - Array e loop For ✔️</li>
   <li>4-3: JavaScript - Lógica de Programação e Algoritmos ✔️</li>
   <li>4-4: JavaScript - Objeros e funções ✔️</li>
-  <li>4-5: Projeto - Playground Functions</li>
+  <li>4-5: Projeto - Playground Functions ✔️</li>
 </ul>
 <h3>Bloco 5: JavaScript: DOM, Eventos e Web Storage</h3>
 <ul>
-  <li>5-1: JavaScript - DOM e selelores</li>
+  <li>5-1: JavaScript - DOM e selelores ✔️</li>
   <li>5-2: JavaScript - Trabalhando com elementos</li>
   <li>5-3: JavaScript - Eventos</li>
   <li>5-4: JavaScript - Web Storage</li>
