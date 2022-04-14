@@ -1,3 +1,4 @@
+// Parte 1
 // Acesse o elemento elementoOndeVoceEsta .
 
 console.log(document.getElementById('elementoOndeVoceEsta'))
@@ -29,3 +30,23 @@ console.log(document.getElementById('elementoOndeVoceEsta').parentElement.lastEl
 // Agora acesse o terceiroFilho a partir de pai .
 
 console.log(document.getElementById('pai').lastElementChild.previousElementSibling)
+
+// Parte 2
+// Crie um irmão para elementoOndeVoceEsta .
+
+let elementoDiv = document.createElement('div')
+document.querySelector('#pai').appendChild(elementoDiv)
+
+// Crie um filho para elementoOndeVoceEsta .
+
+let elementoP = document.createElement('p')
+document.querySelector('#elementoOndeVoceEsta').appendChild(elementoP)
+
+// Crie um filho para primeiroFilhoDoFilho .
+
+let elementoA = document.createElement('a');
+document.querySelector('#primeiroFilhoDoFilho').appendChild(elementoA)
+
+// A partir desse filho criado, acesse terceiroFilho .
+
+console.log(document.getElementsByTagName('a')[0].parentElement.parentElement.nextElementSibling)
