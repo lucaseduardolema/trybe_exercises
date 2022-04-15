@@ -40,13 +40,18 @@ document.querySelector('#pai').appendChild(elementoDiv)
 // Crie um filho para elementoOndeVoceEsta .
 
 let elementoP = document.createElement('p')
-document.querySelector('#elementoOndeVoceEsta').appendChild(elementoP)
+document.querySelector('#elementoOndeVoceEsta').appendChild(elementoP).innerHTML = 'filho elementoOndeVoceEsta'
 
 // Crie um filho para primeiroFilhoDoFilho .
 
 let elementoA = document.createElement('a');
-document.querySelector('#primeiroFilhoDoFilho').appendChild(elementoA)
+document.querySelector('#primeiroFilhoDoFilho').appendChild(elementoA).innerHTML = 'filho do primeiroFilhoDoFilho'
 
 // A partir desse filho criado, acesse terceiroFilho .
 
 console.log(document.getElementsByTagName('a')[0].parentElement.parentElement.nextElementSibling)
+
+// Parte 3
+// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+
+document.getElementById('primeiroFilho').remove()
