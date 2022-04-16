@@ -69,16 +69,12 @@ function createList() {
   const elementoUl = document.createElement('ul');
   document.querySelector('.right-content').appendChild(elementoUl);
   
-  for (let i = 0; i < 10; i += 1) {
-    const elementoLi = document.createElement('li');
-    document.getElementsByTagName('ul')[0].appendChild(elementoLi);
-  }
-
   const numerosExtenso = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
   for (let i = 0; i < numerosExtenso.length; i += 1) {
+    const elementoLi = document.createElement('li');
+    document.getElementsByTagName('ul')[0].appendChild(elementoLi);
     document.getElementsByTagName('li')[i].innerText = numerosExtenso[i];
   }
-
 }
 createList()
 
