@@ -55,11 +55,17 @@ input.addEventListener("change", addText)
 // 4.1. Que tal redirecionar para seu portfólio?
 
 function goPortfolio() {
+  window.open('https://lucaseduardolema.github.io/home/', '_blank')
 }
 myWebpage.addEventListener("dblclick", goPortfolio)
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+function backgroudColorH3() {
+  myWebpage.style.backgroundColor = 'red'
+}
+myWebpage.addEventListener("mouseover", backgroudColorH3)
 
 // Segue abaixo um exemplo do uso de event.target:
 
