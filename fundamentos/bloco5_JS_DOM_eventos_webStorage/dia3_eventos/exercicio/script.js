@@ -182,11 +182,11 @@ function selecionaDiaTarefa(event) {
       event.target.style.color = colorTask;
       event.target.style.fontWeight = 700;
     }
-    else if (dia[i].style.color !== '') {
-      event.target.style.color = 'rgb(119, 119, 119)';
-      event.target.style.fontWeight = 400;
-    }
-    console.log(dia[i].style.color)
+    // else if (dia[i].style.color === colorTask) {
+    //   event.target.style.color = 'white';
+    //   event.target.style.fontWeight = 400;
+    // }
+    // console.log(dia[i].style.color)
   }
 }
 document.getElementById('days').addEventListener('click', selecionaDiaTarefa);
@@ -196,3 +196,17 @@ document.getElementById('days').addEventListener('click', selecionaDiaTarefa);
 // Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
 // Ao pressionar a tecla "enter" o evento também deverá ser disparado.
 // Dica - Propriedade: key .
+
+function addCompromissos() {
+  const input = document.getElementById('task-input');
+  const ulPai = document.querySelector('.task-list');
+  const elementoLi = document.createElement('li');
+
+  if (input.value === '') {
+    alert("Erro ao clicar em 'Adicionar'")
+  } else {
+    ulPai.appendChild(elementoLi);
+    elementoLi.innerText = input.value;
+  }
+}
+document.getElementById('btn-add').addEventListener('click', addCompromissos);
