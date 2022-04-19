@@ -102,14 +102,12 @@ function textBtnSexta() {
   for (let i = 0; i < sextas.length; i += 1) {
     if (sextas[i].innerText > 0) {
       sextas[i].innerText = 'SEXTOUU!!!'
-    } 
-    //   else {
-    //   sextas[0].innerText = dezDaysList[5];
-    //   sextas[1].innerText = dezDaysList[12];
-    //   sextas[2].innerText = dezDaysList[19];
-    //   sextas[3].innerText = dezDaysList[26];
-      
-    // }
+    } else {
+      sextas[0].innerText = dezDaysList[5];
+      sextas[1].innerText = dezDaysList[12];
+      sextas[2].innerText = dezDaysList[19];
+      sextas[3].innerText = dezDaysList[26];
+    }
   }
 }
 btnSexta.addEventListener('click', textBtnSexta)
@@ -118,12 +116,15 @@ btnSexta.addEventListener('click', textBtnSexta)
 // Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
 // Dica - Propriedade: event.target .
 
-// function zoomDay(event) {
-//   const day = document.querySelectorAll('.day');
-//   day.event.target.style.fontSize = '3em';
-// }
-// document.body.addEventListener('mouseenter', zoomDay)
+function zoomInDay(event) {
+  event.target.style.fontSize = '1.7rem';
+}
+document.getElementById('days').addEventListener('mouseover', zoomInDay)
 
+function zoomOutDay(event) {
+  event.target.style.fontSize = '20px';
+}
+document.getElementById('days').addEventListener('mouseout', zoomOutDay)
 // Exercício 7:
 // Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
@@ -175,14 +176,18 @@ divSelecionada.addEventListener('click', tarefaSelecionada);
 
 function selecionaDiaTarefa(event) {
   const colorTask = document.querySelector('.selected').style.backgroundColor
-  const dia = document.querySelector('.day')
-  // if (dia.style === '') {
-    event.target.style.color = colorTask;
-    event.target.style.fontWeight = 700;
-  // } else if (dia.style !== '') {
-  //   event.target.style.color = 'rgb(119, 119, 119)';
-  //   event.target.style.fontWeight = 400;
-  // }
+  const dia = document.querySelectorAll('.day')
+  for (let i = 0; i < dia.length; i += 1) {
+    if (dia[i].style.color === '') {
+      event.target.style.color = colorTask;
+      event.target.style.fontWeight = 700;
+    }
+    else if (dia[i].style.color !== '') {
+      event.target.style.color = 'rgb(119, 119, 119)';
+      event.target.style.fontWeight = 400;
+    }
+    console.log(dia[i].style.color)
+  }
 }
 document.getElementById('days').addEventListener('click', selecionaDiaTarefa);
 
