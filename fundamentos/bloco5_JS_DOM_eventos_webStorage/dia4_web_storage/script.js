@@ -34,7 +34,7 @@ if (valorTxLineHeigth !== 'undefined') {
 }
 
 if (valorFontFamily !== 'undefined') {
-  document.getElementById('texto-formatado').firstElementChild.style.fontFamily = valorFontFamily
+  document.getElementById('texto-formatado').style.fontFamily = valorFontFamily
 }
 
 function bgTela() {
@@ -82,8 +82,14 @@ function fontFamily() {
   let fontes = ['Courier New', 'Franklin Gothic Medium', 'Gill Sans', 'Lucida Sans', 'Segoe UI'];
   let random = Math.floor(Math.random() * 5);
   let fonteAleatoria = fontes[random];
-  document.getElementById('texto-formatado').firstElementChild.style.fontFamily = fonteAleatoria;
+  document.getElementById('texto-formatado').style.fontFamily = fonteAleatoria;
 
   localStorage.setItem('fontFamily', fonteAleatoria)
 }
 document.getElementById('fontFamily').addEventListener('click', fontFamily);
+
+function outputText() {
+  let textValue = document.getElementById('text').value;
+  document.getElementById('texto-formatado').innerText = textValue;
+}
+document.getElementById('inputText').addEventListener('click', outputText);
