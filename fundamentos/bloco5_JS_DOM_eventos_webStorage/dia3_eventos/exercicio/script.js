@@ -128,19 +128,63 @@ btnSexta.addEventListener('click', textBtnSexta)
 // Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
 
+function tarefas(str) {
+  const elementoSpan = document.createElement('span');
+  elementoSpan.innerText = str;
+  const divPai = document.querySelector('.my-tasks');
+
+  divPai.appendChild(elementoSpan);
+}
+tarefas("Projeto");
+
 // Exercício 8:
 // Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
 // O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
 
+function legenda(str) {
+  const elementoDiv = document.createElement('div');
+  elementoDiv.className = 'task';
+  elementoDiv.style.backgroundColor = str;
+  const divPai = document.querySelector('.my-tasks')
+
+  divPai.appendChild(elementoDiv);
+}
+legenda('green')
+
 // Exercício 9:
 // Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
 // Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
 
+const divSelecionada = document.querySelector('.task');
+
+function tarefaSelecionada() {
+  if (divSelecionada.className === 'task') {
+    divSelecionada.className += ' selected';
+  } else {
+    divSelecionada.className = 'task';
+  }
+}
+divSelecionada.addEventListener('click', tarefaSelecionada);
 
 // Exercício 10:
 // Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
 // Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .
+
+// console.log(document.querySelector('.selected').style.backgroundColor)
+
+function selecionaDiaTarefa(event) {
+  const colorTask = document.querySelector('.selected').style.backgroundColor
+  const dia = document.querySelector('.day')
+  // if (dia.style === '') {
+    event.target.style.color = colorTask;
+    event.target.style.fontWeight = 700;
+  // } else if (dia.style !== '') {
+  //   event.target.style.color = 'rgb(119, 119, 119)';
+  //   event.target.style.fontWeight = 400;
+  // }
+}
+document.getElementById('days').addEventListener('click', selecionaDiaTarefa);
 
 // Bônus:
 // Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
