@@ -37,15 +37,15 @@
 <h3>Bloco 5: JavaScript: DOM, Eventos e Web Storage</h3>
 <ul>
   <li>5-1: JavaScript - DOM e selelores ✔️</li>
-  <li>5-2: JavaScript - Trabalhando com elementos</li>
-  <li>5-3: JavaScript - Eventos</li>
-  <li>5-4: JavaScript - Web Storage</li>
-  <li>5-5: Fundamentos - JavaScript Projetos</li>
-  <li>5-5: Projeto - Arte com Pixels</li>
-  <li>5-6: Projeto - Lista de tarefas</li>
-  <li>5-7: (Bônus) Projeto - Meme Generator</li>
-  <li>5-7: (Bônus) Projeto - Adivinhe a Cor</li>
-  <li>5-7: (Bônus) Projeto - Carta Misteriosa</li>
+  <li>5-2: JavaScript - Trabalhando com elementos ✔️</li>
+  <li>5-3: JavaScript - Eventos ✔️</li>
+  <li>5-4: JavaScript - Web Storage ✔️</li>
+  <li>5-5: Fundamentos - JavaScript Projetos ✔️</li>
+  <li>5-5: Projeto - Arte com Pixels ✔️</li>
+  <li>5-6: Projeto - Lista de tarefas ✔️</li>
+  <li>5-7: (Bônus) Projeto - Meme Generator ✔️</li>
+  <li>5-7: (Bônus) Projeto - Adivinhe a Cor ✔️</li>
+  <li>5-7: (Bônus) Projeto - Carta Misteriosa ✔️</li>
 </ul>
 <h3>Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo</h3>
 <ul>
