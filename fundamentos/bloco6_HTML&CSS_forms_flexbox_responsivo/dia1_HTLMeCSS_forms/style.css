@@ -1,0 +1,26 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+fieldset {
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 100%;
+}
+
+#submit, #reset {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
