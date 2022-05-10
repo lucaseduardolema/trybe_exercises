@@ -46,7 +46,6 @@ console.log(listValues(lesson2));
 
 // Crie um objeto de nome allLessons, que deve agrupar todas as aulas através do Object.assign. Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1, lesson2 e lesson3. Ao executar o comando console.log(allLessons), a saída deverá ser a seguinte:
 
-
 const allLessons = {};
 
 Object.assign(allLessons, {lesson1, lesson2, lesson3});
@@ -78,12 +77,30 @@ console.log(getValueByNumber(lesson1, 0));
 // console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
 // Output: false
 
-const verifyPair = (obj, key, value) => {
-  if (obj[key] == value) {
-    return true
-  } else {
-    return false
-  }
-}
+const verifyPair = (obj, key, value) => obj[key] === value ? true : false;
 
+console.log(verifyPair(lesson3, 'turno', 'noite'));
 console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+
+// Bonus
+// 🚀 Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+
+const mathStudents = () => {
+  let total = 0
+  const sala1 = allLessons.lesson1.numeroEstudantes;
+  const sala2 = allLessons.lesson2.numeroEstudantes;
+  const sala3 = allLessons.lesson3.numeroEstudantes;
+  if (allLessons.lesson1.materia === 'Matemática') {
+    total += sala1 ;
+  } 
+  if (allLessons.lesson2.materia === 'Matemática') {
+    total += sala2
+  } 
+  if (allLessons.lesson3.materia === 'Matemática') {
+    total += sala3
+  }
+  return total
+}
+console.log(mathStudents())
+
+// 🚀 Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5:
