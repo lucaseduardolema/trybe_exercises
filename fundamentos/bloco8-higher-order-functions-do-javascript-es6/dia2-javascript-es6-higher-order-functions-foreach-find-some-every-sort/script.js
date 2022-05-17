@@ -278,10 +278,26 @@ console.log(someBookWasReleaseOnThe80s(books));
 
 // const expectedResult = false;
 
-// function authorUnique(arr) {
-//   let bornYear1 = arr[0].author.birthYear;
-//   return arr.forEach((value) => arr.some());
-// }
+function authorUnique(arr) {
+  let born1 = arr[0].author.birthYear
+  let result;
 
-// console.log(books[0].author.birthYear)
-// console.log(authorUnique(books));
+  arr.forEach((value) => {
+    console.log(value)
+    if (value.author.birthYear !== born1) {
+      result = arr.every((value1) => {
+        console.log(value1)
+        value1.author.birthYear !== born1
+      });
+      return result
+    } else {
+      result = !arr.some((value1) => value1.author.birthYear !== born1);
+      return result
+      // console.log(arr.every((value1) => value1.author.birthYear !== born1));
+    }
+  })
+  return result;
+}
+
+console.log(books[0].author.birthYear)
+console.log(authorUnique(books));
