@@ -49,26 +49,26 @@
 </ul>
 <h3>Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo</h3>
 <ul>
-  <li>6-1: HTML & CSS - Forms</li>
-  <li>6-2: Bibliotecas JavaScript e Frameworks CSS</li>
-  <li>6-2: Bibliotecas JavaScript e Frameworks CSS</li>
-  <li>6-3: Introdução - CSS Flexbox</li>
-  <li>6-3: CSS Flexbox - Parte 1</li>
-  <li>6-4: CSS Flexbox Parte 2</li>
-  <li>6-5: CSS Responsivo - Mobile First</li>
-  <li>6-6: Projeto Trybewarts</li>
+  <li>6-1: HTML & CSS - Forms ✔️</li>
+  <li>6-2: Bibliotecas JavaScript e Frameworks CSS ✔️</li>
+  <li>6-2: Bibliotecas JavaScript e Frameworks CSS ✔️</li>
+  <li>6-3: Introdução - CSS Flexbox ✔️</li>
+  <li>6-3: CSS Flexbox - Parte 1 ✔️</li>
+  <li>6-4: CSS Flexbox Parte 2 ✔️</li>
+  <li>6-5: CSS Responsivo - Mobile First ✔️</li>
+  <li>6-6: Projeto Trybewarts ✔️</li>
 </ul>
 <h3>Bloco 7: Introdução à JavaScript ES6 e Testes Unitários</h3>
 <ul>
-  <li>7-1: JavaScript ES6 - let, const, arrow functions e template literals</li>
-  <li>7-2: JavaScript ES6 - Fluxo de exceção e Objetos</li>
-  <li>7-3: Primeiros passos em Jest</li>
-  <li>7-4: Projeto - JavaScript Testes Unitários</li>
+  <li>7-1: JavaScript ES6 - let, const, arrow functions e template literals ✔️</li>
+  <li>7-2: JavaScript ES6 - Fluxo de exceção e Objetos ✔️</li>
+  <li>7-3: Primeiros passos em Jest ✔️</li>
+  <li>7-4: Projeto - JavaScript Testes Unitários ✔️</li>
 </ul>
 <h3>Bloco 8: Higher Order Functions do JavaScript ES6</h3>
 <ul>
-  <li>8-1: JavaScript ES6 - Introdução a Higher Order Functions</li>
-  <li>8-2: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort</li>
+  <li>8-1: JavaScript ES6 - Introdução a Higher Order Functions ✔️</li>
+  <li>8-2: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort ✔️</li>
   <li>8-3: JavaScript ES6 - Higher Order Functions - map, filter</li>
   <li>8-4: JavaScript ES6 - Higher Order Functions - reduce</li>
   <li>8-5: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais</li>
