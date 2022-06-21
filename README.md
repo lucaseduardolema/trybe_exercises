@@ -2,7 +2,7 @@
 <p>Este repositório contém todas as atividades de aprendizagem desenvolvidas por <a href="https://www.linkedin.com/in/lucas-eduardo-m-alves/">Lucas Eduardo</a> enquanto estudava na Trybe 🚀</p>
 <p>"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."</p>
 <p>O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.</p>
-<h2>Introdução - Desenvolvimento Web ⏳</h2>
+<h2>Introdução - Desenvolvimento Web ✔️</h2>
 <h3>Bloco 1: Unix & Bash</h3>
 <ul>
   <li>1-3: Fundamentos do Desenvolvimento Web ✔️</li>
@@ -74,7 +74,7 @@
   <li>8-5: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais ✔️</li>
   <li>8-6: Projeto - Zoo functions ✔️</li>
 </ul>
-<h2>Desenvolvimento Front-end</h2>
+<h2>Desenvolvimento Front-End ⏳</h2>
 <h3>Bloco 9: JavaScript e Testes Assíncronos ✔️</h3>
 <ul>
   <li>9-1: JavaScript Assíncrono e Callbacks ✔️</li>
