@@ -91,31 +91,31 @@
 </ul>
 <h3>Bloco 11: Componentes com Estado, Eventos e Formulários com React</h3>
 <ul>
-  <li>11-1: Componentes com estado e eventos</li>
-  <li>11-2: Formulários no React</li>
-  <li>11-3: Projeto - Tryunfo</li>
+  <li>11-1: Componentes com estado e eventos ✔️</li>
+  <li>11-2: Formulários no React ✔️</li>
+  <li>11-3: Projeto - Tryunfo ✔️</li>
 </ul>
 <h3>Bloco 12: Ciclo de Vida de Componentes e React Router</h3>
 <ul>
-  <li>12-1: Ciclo de vida de componentes</li>
-  <li>12-2: React Router</li>
-  <li>12-3: Projeto - TrybeTunes</li>
+  <li>12-1: Ciclo de vida de componentes ✔️</li>
+  <li>12-2: React Router ✔️</li>
+  <li>12-3: Projeto - TrybeTunes ✔️</li>
 </ul>
 <h3>Bloco 13: Metodologias Ágeis</h3>
 <ul>
-  <li>13-1: Metodologias Ágeis</li>
-  <li>13-2: Projeto - Frontend Online Store</li>
+  <li>13-1: Metodologias Ágeis ✔️</li>
+  <li>13-2: Projeto - Frontend Online Store ✔️</li>
 </ul>
 <h3>Bloco 14: Testes automatizados com React Testing Library</h3>
 <ul>
-  <li>14-1: RTL - Primeiros passos</li>
-  <li>14-2: RTL - Mocks e Inputs</li>
-  <li>14-3: RTL - Testando React Router</li>
-  <li>14-4: Projeto - Testes em React</li>
+  <li>14-1: RTL - Primeiros passos ✔️</li>
+  <li>14-2: RTL - Mocks e Inputs ✔️</li>
+  <li>14-3: RTL - Testando React Router ✔️</li>
+  <li>14-4: Projeto - Testes em React ✔️</li>
 </ul>
 <h3>Bloco 15: Gerenciamento de estado com Redux</h3>
 <ul>
-  <li>15-1: Introdução ao Redux - O estado global da aplicação</li>
+  <li>15-1: Introdução ao Redux - O estado global da aplicação ✔️</li>
   <li>15-2: Usando o Redux no React</li>
   <li>15-3: Usando o Redux no React - Prática</li>
   <li>15-4: Usando o Redux no React - Actions Assíncronas</li>
